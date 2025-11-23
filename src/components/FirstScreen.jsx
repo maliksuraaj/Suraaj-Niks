@@ -8,21 +8,24 @@ export default function FirstScreen({ onNext }) {
       className="bg-[#f7f1ea] p-4 sm:p-6 md:p-7 rounded-[40px] card-shadow w-full max-w-[400px] flex flex-col items-center gap-4"
     >
       {/* GIF Box */}
-      <div className="relative w-full rounded-[30px] flex items-center justify-center bg-gradient-to-b from-white/80 to-rose-200 h-60 sm:h-72 md:h-80 gif-box-shadow">
+      <div className="relative w-full rounded-[30px] flex items-center justify-center bg-gradient-to-b from-white/80 to-rose-200 h-64 sm:h-72 md:h-80 gif-box-shadow">
         {/* Hearts */}
         <Heart className="absolute top-1/4 left-1/4 w-6 sm:w-8 md:w-9 h-6 sm:h-8 md:h-9 -rotate-16 text-red-300 fill-red-300 opacity-50" />
         <Heart className="absolute top-1/4 right-1/4 w-6 sm:w-8 md:w-9 h-6 sm:h-8 md:h-9 rotate-16 text-red-300 fill-red-300 opacity-50" />
 
-        {/* Side flowers */}
-        <img src="/gifs/flower.gif" alt="flower" className="absolute w-20 sm:w-24 md:w-28 left-2 sm:left-0 bottom-2 sm:bottom-3 md:bottom-4 opacity-60" />
-        <img src="/gifs/flower.gif" alt="flower" className="absolute w-20 sm:w-24 md:w-28 right-2 sm:right-0 bottom-2 sm:bottom-3 md:bottom-4 opacity-60" />
+        {/* GIF group */}
+        <div className="relative flex items-center justify-center w-full">
+          {/* Side flowers */}
+          <img src="/gifs/flower.gif" alt="flower" className="absolute left-0 w-20 sm:w-24 md:w-28 bottom-2 sm:bottom-3 md:bottom-4 opacity-60" />
+          <img src="/gifs/flower.gif" alt="flower" className="absolute right-0 w-20 sm:w-24 md:w-28 bottom-2 sm:bottom-3 md:bottom-4 opacity-60" />
 
-        {/* Main GIF */}
-        <img
-          src="/gifs/first.gif"
-          alt="sad panda"
-          className="relative h-24 sm:h-28 md:h-32"
-        />
+          {/* Main GIF */}
+          <img
+            src="/gifs/first.gif"
+            alt="sad panda"
+            className="h-24 sm:h-28 md:h-32"
+          />
+        </div>
       </div>
 
       {/* Text */}
